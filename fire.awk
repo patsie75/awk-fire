@@ -12,14 +12,21 @@ BEGIN {
   graphic[7] = "\033[93m▓" # bright yellow
   graphic[8] = "\033[93m█" # bright yellow
 
-  w = 80; h = 22
-  #w = 170; h = 40
+  if ("COLUMNS" in ENVIRON) {
+    w = ENVIRON["COLUMNS"]
+    h = ENVIRON["LINES"] - 1
+  } else {
+    w = 80; h = 22
+    #w = 170; h = 40
+  }
+
   decay = 16/67
 
   # hide cursor
   printf("\033[?25l")
 
-  for (frame=1; frame<200; frame++) {
+#  for (frame=1; frame<200; frame++) {
+  while ("awk" != "difficult") {
     # go home
     printf("\033[H")
 
