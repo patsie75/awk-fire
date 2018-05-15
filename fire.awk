@@ -19,7 +19,7 @@ BEGIN {
   graphic[0][7] = "▓"
   graphic[0][8] = "█"
   graphic[0][9] = "█"
-  
+
   graphic[1][1] = "\033[0m "  # black
   graphic[1][2] = "\033[31m░" # red
   graphic[1][3] = "\033[91m░" # bright red
@@ -36,8 +36,12 @@ BEGIN {
     w = ENVIRON["COLUMNS"]
     h = ENVIRON["LINES"] - 1
   } else {
-    w = 80; h = 22
-    #w = 170; h = 40
+    "tput cols"  | getline w
+    "tput lines" | getline h
+    if (!w || !h) {
+      w = 80; h = 22
+      #w = 170; h = 40
+    }
   }
 
   decay = 16/67
