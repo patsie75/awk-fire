@@ -8,8 +8,7 @@ On a quiet evening some 4 years later, here's a slight improvement on the effect
 Here's an image of the result:  <br>
 
 
+https://user-images.githubusercontent.com/32614987/151057223-f0fa344e-1f88-4934-ba13-34d78794e2e5.mp4
 
-https://user-images.githubusercontent.com/32614987/150695241-a7bcdc4f-5cee-4311-a195-2fa301d8dc62.mp4
 
-
-For a better version see: https://youtu.be/_n7IKOYogv8
+For a better version see: https://youtu.be/IzCu6BYeI4o
